@@ -11,7 +11,7 @@ n=countriesNo+1;
 generations=zeros(dim,n);
 objective=zeros(1,k);
 for i=1:k
-    [newPop]=recombination(pop,m,coloursNo,mutationProb,recombProbability);
+    [newPop]=recombination(pop,m,recombProbability);
     objective(i)=min(pop(:,n));
     generations=[generations;pop(:,1:n)];
 end
