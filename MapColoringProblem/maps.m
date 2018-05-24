@@ -1,6 +1,6 @@
 ﻿function[]=maps(dim,countriesNo,coloursNo,k,recombProbability,mutationProb)
 
-m=importdata('matrix.txt');
+m=load('matrix.txt');
 disp('The adiacent matrix of the map is:');
 disp(m);
 pop=initialPop(m,dim,countriesNo,coloursNo);
